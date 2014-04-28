@@ -6,6 +6,9 @@
   "dependencies": {
     "express": "3.x",
     "typescript": "*",
-    "jade": "*"
+    "jade": "*",
+    "mongodb": "*",
+    "monk": "*",
+    "markdown": "*"
   }
 }

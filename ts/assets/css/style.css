@@ -6,6 +6,8 @@
   margin-right: 100px;
   background-color: gray;
   overflow: scroll;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   /*max-height: 700px;*/
 }
 
@@ -23,7 +25,7 @@ body {
 
 .site-title {
   text-align: center;
-  backround
+  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
 }
 
 .post-title {
@@ -35,22 +37,28 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
+  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
 }
 
 #post-text pre {
   background-color: #2A2A2A;
   color: white;
   max-width: 80%;
-  font-family: Monaco, monospace;
+  font-family: 'Source Code Pro', Monaco, monospace;
   margin: 0 auto;
   /*font-size: 80%;*/
   overflow: scroll;
-  border: 2px solid;
+  border: 1px solid;
   border-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #post-text p {
-  margin-left: 10px;
   text-indent: 15px;
 }
