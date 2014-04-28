@@ -4,20 +4,40 @@
   bottom: 10px;
   margin-left: 100px;
   margin-right: 100px;
-  background-color: gray;
+  background-color: #5E9191;
   overflow: scroll;
   border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top: 1px solid;
   /*max-height: 700px;*/
 }
 
 body {
   background-image: url("../images/background.jpg");
+  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
+}
+
+#title-link a {
+  color: black;
+}
+
+#nav-links a {
+  color: black;
+}
+
+ul#nav-links {
+  padding-left: 0;
 }
 
 #nav-bar {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
   position: fixed;
-  top: 0;
+  top: 10px;
   max-width: 100px;
   width: 100px;
   background-color: #E0E0E0;
@@ -25,7 +45,6 @@ body {
 
 .site-title {
   text-align: center;
-  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
 }
 
 .post-title {
@@ -37,7 +56,6 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
-  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid;
@@ -46,7 +64,7 @@ body {
 }
 
 #post-text pre {
-  background-color: #2A2A2A;
+  background-color: #0A2929; /*#2A2A2A*/
   color: white;
   max-width: 80%;
   font-family: 'Source Code Pro', Monaco, monospace;

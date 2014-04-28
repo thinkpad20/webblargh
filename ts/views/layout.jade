@@ -12,8 +12,12 @@ html
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css')
   body
     #nav-bar
-      p WebBlargh
-      span.fa.fa-caret-down
+      p#title-link #[a(href='#') WebBlargh]
+      ul#nav-links
+        li #[a(href='#') About]
+        li #[a(href='#') Latest]
+        li #[a(href='#') Contact]
+
     #main
       h1.site-title Hello, world!
       h2.post-title Here's an entry:
