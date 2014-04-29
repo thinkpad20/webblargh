@@ -3,3 +3,5 @@ flask
 requests
 pymongo
 markdown
+pyjade
+jinja2

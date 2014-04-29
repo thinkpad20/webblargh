@@ -3,45 +3,37 @@ html
   head
     meta(charset='utf-8')
     title Allen Nelson's WebBlargh
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    //
-       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    link(rel='stylesheet', type='text/css', href='css/font-awesome.css')
-    link(rel='stylesheet', type='text/css', href='css/style.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' href='css/font-awesome.css')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
     link(href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css')
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css')
   body
     #nav-bar
-      p#title-link #[a(href='#') WebBlargh]
       ul#nav-links
         li #[a(href='#') About]
         li #[a(href='#') Latest]
         li #[a(href='#') Contact]
+        li #[a(href='http://github.com/thinkpad20') Github]
 
     #main
-      h1.site-title Hello, world!
-      h2.post-title Here's an entry:
+      hgroup#site-title
+        h1.main-title
+          span Allen's
+          span.first  web
+          span.second blargh
+        h4.subtitle Thoughts and feelings on computer science.
+        h4.subtitle A blog that I wrote from scratch.
+        h4.subtitle Which, unfortunately, is probably obvious.
       #post-text
-        h3 Part 1:
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu augue fringilla, sodales justo eu, varius sapien. Aliquam ac leo varius, semper ipsum sit amet, egestas ligula. Duis ornare dolor ac hendrerit porttitor. Vivamus a nunc ante. Morbi luctus in sem eget scelerisque. Vivamus in bibendum nisi, non posuere mi. Sed a pretium nibh. Etiam convallis velit ac condimentum suscipit. Maecenas metus libero, sollicitudin nec arcu vehicula, tempus tempor velit.
-        pre.
-          fib :: Num a =&gt; a -&gt; a
-          fib n = go 0 1 1 where
-            go n' prev cur | n == n' = cur
-                           | otherwise = go (n + 1) cur (prev + cur)
-        h3 Part 2:
-        p
-          | Ut eget erat nec justo blandit mattis. In diam diam, sagittis vitae venenatis non, ullamcorper sed augue. Vestibulum mauris sapien, vestibulum rutrum libero in, pulvinar cursus nulla. Pellentesque vehicula sagittis tellus sit amet dapibus. Pellentesque fermentum aliquam lacus, at dictum orci egestas sed. Curabitur ante tellus, porttitor nec nisi at, faucibus molestie velit. Nunc sit amet varius nibh. Quisque volutpat lorem eu semper mattis. In fermentum blandit ipsum, ut varius lectus lobortis eget.
-        h3 Part 3:
-        p
-          | Vestibulum elementum imperdiet vehicula. Pellentesque mattis non orci at iaculis. Nam imperdiet, est eget dictum feugiat, leo ligula varius nibh, et mollis arcu turpis et sapien. Nulla venenatis lectus lacinia iaculis cursus. Phasellus at diam at neque sollicitudin sollicitudin quis ac metus. Pellentesque ullamcorper nulla eu nisi adipiscing, id dignissim lorem molestie. Maecenas ultricies sem vitae orci pellentesque, quis vestibulum risus lacinia. Aenean blandit velit ut sollicitudin hendrerit. Donec et sapien nisl. Curabitur sit amet tristique urna. Ut feugiat, massa eu volutpat aliquam, odio dolor fringilla sapien, a volutpat nisi lorem eu urna. Quisque sagittis lorem in lorem convallis, sit amet dictum ipsum lacinia. Ut orci lacus, faucibus sed nibh eget, pulvinar suscipit ipsum. Suspendisse imperdiet ante in lacus pharetra, sit amet rutrum enim bibendum.
-        h3 Part 4:
-        p
-          | Vestibulum leo felis, tincidunt eget faucibus eget, sagittis nec mauris. Praesent nibh lectus, rhoncus a libero in, pretium vulputate augue. Aenean euismod vehicula vestibulum. In non congue libero. Suspendisse sem velit, venenatis gravida blandit sed, volutpat et felis. Pellentesque a velit lacinia, fringilla nunc eget, pulvinar ipsum. Donec scelerisque sem id velit pulvinar, at vehicula neque hendrerit.
-        h3 Part 5:
-        p
-          | Nam nisi neque, ullamcorper elementum porttitor vitae, adipiscing sed felis. Duis diam lacus, congue non urna id, tristique condimentum felis. Etiam vehicula eros vel nulla pulvinar congue. Ut ut volutpat quam. Sed quis volutpat est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac purus id leo suscipit tempus. Vivamus volutpat tincidunt enim id fringilla. Ut justo arcu, eleifend sit amet interdum eu, tempor eu dui. Donec faucibus tellus at tellus aliquet fringilla. Morbi eget venenatis arcu.
+        block post
+      #end-nav
+        span.previous
+          a(href='#')
+            i.fa.fa-caret-left
+            span  Previous post
+        span.next
+          a(href='#')
+            span Next post&nbsp;
+            i.fa.fa-caret-right
     script(src='http://code.jquery.com/jquery.min.js')
-    //
-       <script src="js/boostrap.min.js"/>

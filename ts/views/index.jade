@@ -1,5 +1,81 @@
 extends layout
 
+block post
+  h1 Hello!
+  h3 Part 1:
+  p
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu augue fringilla, sodales justo eu, varius sapien. Aliquam ac leo varius, semper ipsum sit amet, egestas ligula. Duis ornare dolor ac hendrerit porttitor. Vivamus a nunc ante. Morbi luctus in sem eget scelerisque. Vivamus in bibendum nisi, non posuere mi. Sed a pretium nibh. Etiam convallis velit ac condimentum suscipit. Maecenas metus libero, sollicitudin nec arcu vehicula, tempus tempor velit.
+  pre.
+    fib :: Num a =&gt; a -&gt; a
+    fib n = go 0 1 1 where
+      go n' prev cur | n == n' = cur
+                     | otherwise = go (n + 1) cur (prev + cur)
+  h3 Part 2:
+  p
+    | Ut eget erat nec justo blandit mattis. In diam diam, sagittis vitae venenatis non, ullamcorper sed augue. Vestibulum mauris sapien, vestibulum rutrum libero in, pulvinar cursus nulla. Pellentesque vehicula sagittis tellus sit amet dapibus. Pellentesque fermentum aliquam lacus, at dictum orci egestas sed. Curabitur ante tellus, porttitor nec nisi at, faucibus molestie velit.
+  pre.
+    #end-nav .previous {
+      color: white;
+      float: left;
+      margin-left: 5px;
+    }
+
+    #end-nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #end-nav .next {
+      color: white;
+      float: right;
+      margin-right: 5px;
+    }
+
+    #post-text {
+      background-color: #E9E9E9;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 1px solid;
+      border-color: black;
+      border-radius: 5px;
+      box-shadow: -1px 1px 1px 1px black;
+    }
+
+    #post-text pre {
+      background: linear-gradient(black, #092222); /*#2A2A2A*/
+      color: white;
+      max-width: 80%;
+      font-family: Monaco, monospace;
+      max-height: 500px;
+      margin: 0 auto;
+      font-size: 80%;
+      overflow: scroll;
+    /*  border: 1px solid;
+      border-color: white; */
+      border-radius: 5px;
+      padding: 5px;
+      box-shadow: inset 0px 0px 5px rgba(200,200,200,0.9);
+    }
+
+    #post-text p {
+      text-indent: 15px;
+    }
+
+  p
+    | Nunc sit amet varius nibh. Quisque volutpat lorem eu semper mattis. In fermentum blandit ipsum, ut varius lectus lobortis eget.
+  h3 Part 3:
+  p
+    | Vestibulum elementum imperdiet vehicula. Pellentesque mattis non orci at iaculis. Nam imperdiet, est eget dictum feugiat, leo ligula varius nibh, et mollis arcu turpis et sapien. Nulla venenatis lectus lacinia iaculis cursus. Phasellus at diam at neque sollicitudin sollicitudin quis ac metus. Pellentesque ullamcorper nulla eu nisi adipiscing, id dignissim lorem molestie. Maecenas ultricies sem vitae orci pellentesque, quis vestibulum risus lacinia. Aenean blandit velit ut sollicitudin hendrerit. Donec et sapien nisl. Curabitur sit amet tristique urna. Ut feugiat, massa eu volutpat aliquam, odio dolor fringilla sapien, a volutpat nisi lorem eu urna. Quisque sagittis lorem in lorem convallis, sit amet dictum ipsum lacinia. Ut orci lacus, faucibus sed nibh eget, pulvinar suscipit ipsum. Suspendisse imperdiet ante in lacus pharetra, sit amet rutrum enim bibendum.
+  h3 Part 4:
+  p
+    | Vestibulum leo felis, tincidunt eget faucibus eget, sagittis nec mauris. Praesent nibh lectus, rhoncus a libero in, pretium vulputate augue. Aenean euismod vehicula vestibulum. In non congue libero. Suspendisse sem velit, venenatis gravida blandit sed, volutpat et felis. Pellentesque a velit lacinia, fringilla nunc eget, pulvinar ipsum. Donec scelerisque sem id velit pulvinar, at vehicula neque hendrerit.
+  h3 Part 5:
+  p
+    | Nam nisi neque, ullamcorper elementum porttitor vitae, adipiscing sed felis. Duis diam lacus, congue non urna id, tristique condimentum felis. Etiam vehicula eros vel nulla pulvinar congue. Ut ut volutpat quam. Sed quis volutpat est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac purus id leo suscipit tempus. Vivamus volutpat tincidunt enim id fringilla. Ut justo arcu, eleifend sit amet interdum eu, tempor eu dui. Donec faucibus tellus at tellus aliquet fringilla. Morbi eget venenatis arcu.
+
 //- block main
 //-   .header
 //-     h1 Page Title
