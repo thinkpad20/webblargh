@@ -1,28 +1,43 @@
+body {
+  /*background-image: url("../images/background.jpg");*/
+  background-color: #AAA;
+  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
+}
+
 #main {
   position: fixed;
   top: 10px;
   bottom: 10px;
   margin-left: 100px;
   margin-right: 100px;
-  /*background-color: #0A2929;*/
-  background: linear-gradient(#0A2929, #165656);
+  background: linear-gradient(#292929, #565656);
   overflow: scroll;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top: 1px solid;
-  box-shadow: -2px 2px 5px #AAAAAA;
+  box-shadow: -2px 2px 5px #555;
   z-index: 0;
-  /*max-height: 700px;*/
 }
 
-body {
-  background-image: url("../images/background.jpg");
-  font-family: "PT Serif", "Georgia", "Helvetica Neue", serif;
+#nav-bar {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  max-width: 100px;
+  width: 100px;
+  background-color: #E9E9E9;
+  box-shadow: -2px 2px 5px #555;
 }
 
 #title-link a {
   color: black;
+  font-weight: bold;
 }
 
 #nav-links {
@@ -38,25 +53,12 @@ body {
   list-style-type: none;
 }
 
-#nav-bar {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top: 1px solid;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
-  position: fixed;
-  z-index: 1;
-  top: 10px;
-  max-width: 100px;
-  width: 100px;
-  background-color: #E9E9E9;
-}
 
 #site-title {
   color: white;
-  text-shadow: 0 0 1px #101010;
+  text-shadow: -1px 1px 2px #101010;
   background-color: #131D1D;
-  background: linear-gradient(#165656, #0A2929);
+  background: linear-gradient(#565656, #292929);
   margin-left: 10px;
   margin-right: 10px;
   border-top-right-radius: 5px;
@@ -66,11 +68,11 @@ body {
 }
 
 #site-title .first {
-  color: #C2FFFF;
+  color: #DDD;
 }
 
 #site-title .second{
-  color: #88B2B2;
+  color: #AAA;
 }
 
 #site-title .subtitle {
@@ -109,7 +111,7 @@ body {
 }
 
 #post-text pre {
-  background: linear-gradient(black, #092222); /*#2A2A2A*/
+  background: linear-gradient(black, #222222); /*#2A2A2A*/
   color: white;
   max-width: 80%;
   font-family: Monaco, monospace;
